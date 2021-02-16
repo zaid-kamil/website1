@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name = 'index.html')),
     path('cssexample',TemplateView.as_view(template_name='css_example_1.html')),
-    path('about',TemplateView.as_view(template_name='about.html'))
+    path('cssexample2',TemplateView.as_view(template_name='css_example_2.html')),
+    path('about',TemplateView.as_view(template_name='about.html')),
 ]
