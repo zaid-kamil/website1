@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example 2</title>
+    
     <style>
         body,html{
             margin: 0;
@@ -32,17 +33,56 @@
         }
         .header_text div{
             color: rgb(255, 255, 255);
-            background-color: rgb(228, 74, 74);
+            background-color: rgba(15, 15, 15, 0.329);
             border-radius: 5em;
-            padding:1em;
+            padding:.4em;
+            transition: all .3s ease-out;
         }
         .header_text div:hover{
-            
+            background-color:transparent;
+        }
+        
+        @keyframes headingColorFade {
+            from{
+                color: rgb(27, 24, 24);
+                transform: scale(3);
+            }
+            to{
+                color: white;
+                transform: scale(1);
+            }
         }
 
+        .header_text h1{
+            animation: headingColorFade 3s ease;
+        }
+
+        section{
+            height: 100vh;
+            color: honeydew;
+            background-color: rgb(0, 0, 0);
+        }
+
+        article h2{
+            margin: 0;
+            background-color: #d1a867;
+            color: rgb(36, 32, 32);
+            padding: 1em;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        article p{
+            font-family: sans-serif;
+            line-height: 2rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 1em;
+            
+        }
     </style>
 </head>
 <body>
+    
     <header>
         <div class="header_text">
             <h1>Welcome to Africa</h1>
@@ -57,5 +97,6 @@
             <p>Quis molestiae necessitatibus consectetur in, autem repellendus nemo optio voluptas. Quod dicta ab eius odit fugiat animi quis repellat! Mollitia ducimus est optio ipsa magnam, ipsam aperiam maxime, ipsum adipisci non minima, quidem nostrum voluptatum corporis nulla nesciunt eos quibusdam? Vel officiis sint reiciendis eum, commodi ratione quas ad cum?</p>
         </article>
     </section>
+
 </body>
 </html>
